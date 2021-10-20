@@ -28,6 +28,16 @@ const Location = new EntitySchema(
         type: "text",
         nullable: true,
       },
+      createdAt: {
+        type: "timestamp",
+        createDate: true,
+        nullable: true,
+      },
+      updatedAt: {
+        type: "timestamp",
+        updateDate: true,
+        nullable: true,
+      },
     },
   })
 );
